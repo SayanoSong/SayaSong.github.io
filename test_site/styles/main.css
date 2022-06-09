@@ -217,9 +217,22 @@ body {
         margin-top: 20%;
     }
     #navbar_links{
-        margin-right: 10%;
+        margin-right: 20%;
     }
     #navbar_music{
         margin-left: 10%;
+    }
+    #navbar_logo{
+        max-width: 20%;
+    }
+
+    #paff, #neko, #xenon{
+        max-width: 90%;
+    }
+    #return_btn{
+        margin-right: 0%;
+    }
+    #submit_btn{
+        margin-left: 0%;
     }
 }
