@@ -36,24 +36,22 @@
 </head>
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
 <header id="header">
-    <nav class="navbar navbar-expand-sm fixed-top  navbar-dark bg-dark" id="navbar">
-        <div class="navbar-header" id="navbar-header">
+    <nav class="navbar navbar-expand-sm fixed-top navbar-dark bg-dark" id="navbar">
+        <div id="navbar_logo">
             <a class="navbar-brand" href="#header" id="navbar-brand" onclick="javascript:goMainPage()">
                 <img alt="company_logo" id="logo" src="images/logo.png">
             </a>
         </div>
-        <div class="container" id="navbar-container">
-            <ul class="navbar-nav" id="navbar-nav-ul">
+        <div id="navbar_links">
+            <ul class="navbar-nav navbar-text" id="navbar-nav-ul">
                 <li class="nav-item"><a class="nav-link" href="#homepage">Homepage</a></li>
                 <li class="nav-item"><a class="nav-link" href="#artists">Artists</a></li>
                 <li class="nav-item"><a class="nav-link" href="#book">Booking</a></li>
             </ul>
-            <ul class="navbar-nav navbar-right" id="navbar-nav-ul-right">
-                <audio id="main_bgm" style="display:none" src="musics/mainBGM.mp3" loop></audio>
-                <a class="navbar-brand" id="music_logo_group">
-                    <img id="music_logo" src="images/music.png" onclick="javascript:play_music()">
-                </a>
-            </ul>
+        </div>
+        <div id="navbar_music">
+            <audio id="main_bgm" style="display:none" src="musics/mainBGM.mp3" loop></audio>
+            <img id="music_logo" src="images/music.png" onclick="javascript:play_music()">
         </div>
     </nav>
 </header>
@@ -97,7 +95,7 @@
                 </a>
             </div>
             <a href="#character_page" onclick="javascript:goCharPage(1)">
-                <img alt="char1_name" id="puff" src="images/char1.jpg">
+                <img alt="char1_name" id="paff" src="images/char1.jpg">
             </a>
         </div>
         <div class="progress" id="progress1">
@@ -212,7 +210,7 @@
                 </p>
             </div>
 
-            <table class="table table-dark table-striped table-hover" style="color: aliceblue">
+            <table class="table table-dark table-striped table-hover" style="color: aliceblue" id="detail_table">
                 <thead>
                 <tr>
                     <th>Ticket Type</th>

@@ -20,7 +20,6 @@ body {
 	background-repeat:repeat;
 }
 
-
 .container {
     display: flex;
 }
@@ -29,9 +28,19 @@ body {
     height: 10%;
 }
 
+#navbar_links{
+    margin-right: 30%;
+}
+#navbar_music{
+    margin-left: 30%;
+}
+
 .nav-item {
+    position:relative;
     font-weight: 500;
-    margin-right: 10%;
+}
+#navbar-brand{
+    margin-right: 0%;
 }
 
 .nav-link {
@@ -42,13 +51,13 @@ body {
 }
 
 #logo{
-    width: 30%;
     max-width: 30%;
     height: auto;
+    margin: left 0;
 }
+
 #music_logo{
     max-width: 80%;
-    height: auto;
 }
 #main{
     position:relative;
@@ -67,7 +76,6 @@ body {
 #event_info_group, #book_info_group{
     position:relative;
     margin-top: 10%;
-    margin-left: 10%;
 }
 
 #description{
@@ -93,6 +101,7 @@ body {
 
 #artist1_group, #artist2_group, #artist3_group{
     display: flex;
+    position: relative;
 }
 
 #char1_group, #char2_group, #char3_group{
@@ -103,7 +112,7 @@ body {
     position: relative;
     float: right;
     margin-right: 30%;
-    width: 350px;
+    width: 300px;
     margin-bottom: 10%;
 }
 
@@ -112,7 +121,7 @@ body {
     position: relative;
     float: left;
     margin-left: 28%;
-    width: 350px;
+    width: 300px;
     margin-bottom: 10%;
 }
 #book_description{
@@ -192,4 +201,25 @@ body {
 
 #character_page{
     display: none;
+}
+
+@media (max-width: 600px) {
+    #navbar{
+        height: 20%;
+    }
+    #homepage{
+        margin-top: 40%;
+    }
+    #char_description_group{
+        max-width: 100%;
+    }
+    #character_title{
+        margin-top: 20%;
+    }
+    #navbar_links{
+        margin-right: 10%;
+    }
+    #navbar_music{
+        margin-left: 10%;
+    }
 }
