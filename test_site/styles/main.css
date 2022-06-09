@@ -207,14 +207,14 @@ body {
     #navbar{
         height: 20%;
     }
-    #homepage{
-        margin-top: 40%;
+    #event_name{
+        margin-top: 30%;
     }
     #char_description_group{
         max-width: 100%;
     }
     #character_title{
-        margin-top: 20%;
+        margin-top: 25%;
     }
     #navbar_links{
         margin-right: 20%;
