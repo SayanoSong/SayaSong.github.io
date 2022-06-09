@@ -1,0 +1,25 @@
+:root {
+    --color-black: #000000;
+    --color-ice-cream-green: #abc369;
+
+    --color-ice-cream-orange: #f4bb92;
+    --color-ice-cream-pink: #f2becc;
+    --color-ice-cream-white: #f6f4ec;
+    --color-ice-cream-yellow: #ffd98c;
+    --color-ice-cream-yellow-contrast: #222;
+
+    --color-nav-item-active: red;
+}
+
+#event_name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    height: 200px;
+    margin-top: 200px;
+}
+#loading_bar{
+    margin: auto;
+    width: 50%;
+}
