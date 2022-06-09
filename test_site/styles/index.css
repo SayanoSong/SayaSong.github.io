@@ -1,180 +1,24 @@
-:root {
-    --brown: #763e26;
-    --green: #abc369;
-    --orange: #f4bb92;
-    --pink: #f2becc;
-    --white: #f6f4ec;
-    --yellow: #ffd98c;
-    --yellow-contrast: #222;
+/*
+    CSI 3125 Project
+    Student Name: Victor Li
+    Student Number: 300146133
+    Institution: the University of Ottawa
 
-    --color-nav-item-active: red;
-}
+    Reference:
+    1. https://www.rayark.com/g/cytus2/
+    2. https://mikuexpo.com/
+    3. https://zenless.hoyoverse.com/en-us
+*/
 
-body {
-    background:url(../images/main_bg.png);
-	background-repeat:repeat;
-}
-
-
-.container {
+#event_name{
     display: flex;
-}
-
-#navbar{
-    height: 10%;
-}
-
-.nav-item {
-    font-weight: 500;
-}
-
-.nav-link {
-    color: var(--white);
-    margin-left: 3vh;
-    margin-right: 3vh;
-}
-.nav-link:hover{
-    color: var(--yellow);
-}
-
-#logo{
-    max-width: 30%;
-    height: auto;
-}
-#music_logo{
-    max-width: 80%;
-    height: auto;
-}
-#main{
-    position:relative;
-    margin-top: 15%;
-}
-
-#title_group{
-    position:relative;
-}
-
-#subtitle_group{
-    position:relative;
-    text-align: right;
-}
-
-#event_info_group, #book_info_group{
-    position:relative;
-    margin-top: 10%;
-    margin-left: 10%;
-}
-
-#description{
-    max-width: 75%;
-    margin-bottom: 10%;
-}
-
-#bookBtn{
-    position:relative;
-    margin-left: 70%;
-    transform:rotate(10deg);
-}
-#bookBtn:hover{
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-}
-
-#artist_title_group{
-    position:relative;
-    top:20%;
-    margin-bottom: 10%;
-}
-
-#artist1_group, #artist2_group, #artist3_group{
-    display: flex;
-}
-
-#char1_group, #char2_group, #char3_group{
-    align-self: flex-end
-}
-
-#progress1, #progress3{
-    position: relative;
-    float: right;
-    margin-right: 30%;
-    width: 25%;
-    margin-bottom: 10%;
-}
-
-
-#progress2{
-    position: relative;
-    float: left;
-    margin-left: 28%;
-    width: 25%;
-    margin-bottom: 10%;
-}
-#book_description{
-    max-width: 75%;
-    margin-bottom: 5%;
-}
-#bookBtn2, #bookBtn3{
-    position:relative;
-    display: table;
-    margin: 0 auto;
-    margin-bottom: 10%;
-}
-
-
-#char_description_group{
-    max-width: 60%;
-}
-#char_description{
-    margin-bottom: 5%;
-}
-
-#cancel_btn{
-    margin-right: 20%;
-}
-#confirm_btn{
-    margin-left: 20%;
-}
-
-#return_btn{
-    margin-right: 5%;
-}
-
-#submit_btn{
-    margin-left: 5%;
-}
-
-
-.footer-row-middle {
-    flex-direction: column;
-}
-.footer-row-middle-h2{
-    margin-bottom: 5%;
-}
-#footer-row-middle-left {
-    margin-bottom: 5%;
-    margin-top: 10%;
-}
-#footer-row-middle-right{
-    margin-bottom: 5%;
-    margin-top: 10%;
-    position:relative;
-    text-align: left;
-    margin-left: 30%;
-}
-#footer-container {
-    flex-direction: column;
-    height: 100%;
-    justify-content: flex-end;
-    padding-bottom: 3vh;
-}
-
-#footer-row-bottom {
-    flex-direction: row;
-    justify-content:center;
-}
-
-#footer-row-bottom-right {
+    align-items: center;
     justify-content: center;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    text-align: justify;
+    height: 200px;
+    margin-top: 200px;
+}
+#loading_bar{
+    margin: auto;
+    width: 50%;
 }

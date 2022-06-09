@@ -1,3 +1,14 @@
+<!--
+    CSI 3125 Project
+    Student Name: Victor Li
+    Student Number: 300146133
+    Institution: the University of Ottawa
+
+    Reference:
+    1. https://www.rayark.com/g/cytus2/
+    2. https://mikuexpo.com/
+    3. https://zenless.hoyoverse.com/en-us
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,315 +32,19 @@
     <script crossorigin="anonymous"
         integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
         referrerpolicy="no-referrer" src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-    <script src="scripts/index.js"></script>
 </head>
-<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
-<header id="header">
-    <nav class="navbar navbar-expand-sm fixed-top justify-content-center navbar-dark bg-dark" id="navbar">
-        <div class="navbar-header" id="navbar-header">
-            <a class="navbar-brand" href="#header" id="navbar-brand" onclick="javascript:goMainPage()">
-                <img alt="company_logo" id="logo" src="images/logo.png">
-            </a>
-        </div>
-        <div class="container" id="navbar-container">
-            <ul class="navbar-nav" id="navbar-nav-ul">
-                <li class="nav-item"><a class="nav-link" href="#homepage">Homepage</a></li>
-                <li class="nav-item"><a class="nav-link" href="#artists">Artists</a></li>
-                <li class="nav-item"><a class="nav-link" href="#book">Booking</a></li>
-            </ul>
-            <ul class="navbar-nav navbar-right" id="navbar-nav-ul-right">
-                <audio id="main_bgm" style="display:none" src="musics/mainBGM.mp3" loop></audio>
-                <a class="navbar-brand" id="music_logo_group">
-                    <img id="music_logo" src="images/music.png" onclick="javascript:play_music()">
-                </a>
-            </ul>
-        </div>
-    </nav>
-</header>
-<main id="main">
-    <section id="homepage">
-        <div class="container mt-5 border-0 justify-content-end" id="title_group">
-            <div class = "display-3 text-end" id="event_name" style="color: aliceblue"><b>Virtual Band Expo</b></div>
-        </div>
-        <div class="container mt-5 justify-content-end" id="subtitle_group">
-            <div class = "h5" id="subtitle" style="color: aliceblue">------------- A Music Festival with Multiple Virtual Singers</div>
-        </div>
-        <div class="container mb-4" id="event_info_group">
-            <div class="h4" id="event_info_name" style="color: aliceblue"><b>Event Info</b></div>
-            <button type="button" class="btn btn-primary" id="bookBtn" data-bs-toggle="modal"
-                data-bs-target="#book_modal">
-                BOOK NOW!
-            </button>
-        </div>
-        <div class="border border-top-0 border-5 border-aliceblue container" id="description" style="color: aliceblue">
-            <p>
-                The Virtual Band Expo has announced its majestic return in 2022, with a brand new venue, dates,
-                and an updated lineup. Slated for August 12, 13, 14th 2022, the festival will be debuting at
-                Burl Event Grounds for its 5th annual edition !!! <br><br>
-                The Virtual Band Expo is an annual music festival organized by Saya Song Media with many online
-                singers who uses a virtual avatar generated using computer graphics. The performers of the Virtual Band Expo
-                in each year might be changed.
-            </p>
-        </div>
-    </section>
 
-    <section id="artists">
-        <div class="container mt-5 justify-content-end" id="artist_title_group">
-            <div class = "display-4 text-end border-bottom border-5 border-aliceblue"
-            id="artist_title" style="color: aliceblue"> <b>Artists</b></div>
-        </div>
-        <div class="container mt-5 justify-content-end" id="artist1_group">
-            <div class="container justify-content-end" id="char1_group">
-                <a class="h3" id="char1_name" style="color: aliceblue"
-                    href="#character_page" onclick="javascript:goCharPage(1)">
-                    <b>Paff</b>
-                </a>
-            </div>
-            <a href="#character_page" onclick="javascript:goCharPage(1)">
-                <img alt="char1_name" id="puff" src="images/char1.jpg">
-            </a>
-        </div>
-        <div class="progress" id="progress1">
-            <a class="progress-bar progress-bar-striped progress-bar-animated" 
-                href="#character_page" onclick="javascript:goCharPage(1)" style="width: 100%">
-                For More Information
-            </a>
-        </div>
-
-        <div class="container mt-5 justify-content-start" id="artist2_group">
-            <a href="#character_page" onclick="javascript:goCharPage(2)">
-                <img alt="char2_name" id="neko" src="images/char2.jpg">
-            </a>
-            <div class="container justify-content-start" id="char2_group">
-                <a class="h3" id="char2_name" style="color: aliceblue"
-                    href="#character_page" onclick="javascript:goCharPage(2)">
-                    <b>Neko</b>
-                </a>
-            </div>
-        </div>
-        <div class="progress" id="progress2">
-            <a class="progress-bar progress-bar-striped progress-bar-animated" 
-                href="#character_page" onclick="javascript:goCharPage(2)" style="width: 100%">
-                For More Information
-            </a>
-        </div>
-
-        <div class="container mt-5 justify-content-end" id="artist3_group">
-            <div class="container justify-content-end" id="char3_group">
-                <a class="h3" id="char3_name" style="color: aliceblue"
-                    href="#character_page" onclick="javascript:goCharPage(3)">
-                    <b>Xenon</b>
-                </a>
-            </div>
-            <a href="#character_page" onclick="javascript:goCharPage(3)">
-                <img alt="char3_name" id="xenon" src="images/char3.jpg">
-            </a>
-        </div>
-        <div class="progress" id="progress3">
-            <a class="progress-bar progress-bar-striped progress-bar-animated" 
-                href="#character_page" onclick="javascript:goCharPage(3)" style="width: 100%">
-                For More Information
-            </a>
-        </div>
-    </section>
-
-    <section id="book">
-        <div class="container mb-4" id="book_info_group">
-            <div class="h4" id="book_info_name" style="color: aliceblue"><b>Concerts</b></div>
-        </div>
-        <div class="border border-top-0 border-5 border-aliceblue container" id="book_description" style="color: aliceblue">
-            <table class="table table-dark table-striped table-hover" style="color: aliceblue">
-                <thead>
-                <tr>
-                    <th>City</th>
-                    <th>Venue</th>
-                    <th>Date</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td>Ottawa</td>
-                    <td>The University of Ottawa</td>
-                    <td>August 12, 2022,<br> 7:00 P.M. ~ 10:00 P.M.</td>
-                </tr>
-                <tr>
-                    <td>Toronto</td>
-                    <td>Scotiabank Arena</td>
-                    <td>August 13, 2022,<br> 7:00 P.M. ~ 10:00 P.M.</td>
-                </tr>
-                <tr>
-                    <td>More Coming Soon...</td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                </tbody>
-            </table>
-        </div>
-        <button type="button" class="btn btn-primary" id="bookBtn2" data-bs-toggle="modal" data-bs-target="#book_modal">
-            BOOK NOW!
-        </button>
-    </section>
-
-    <section id="character_page">
-        <div class=" container mb-5" id="character_group">
-            <div class="h2 border-bottom border-1 border-aliceblue" id="character_title" style="color: aliceblue">
-                <b>Artist Information</b>
-            </div>
-        </div>
-        <div class="container mt-5 justify-content-center" id="character_img_group">
-            <img alt="char_img" id="char_img" src="images/char1.png">
-        </div>
-        <div class="border border-top-0 border-5 border-aliceblue container mb-5 mt-5 justify-content-center" 
-            id="char_description_group" style="color: aliceblue; flex-direction: column;">
-            <div class="container" id="char_description">
-                <p id="char1_word">
-                    A singer and commercial star who enjoys immense popularity; a 24 year old girl who seems born 
-                    to be in the spotlight, whether it's the virtual world or the real world. The number of fans 
-                    she has is astonishing. She can hold virtual concerts non stop for a whole week and every 
-                    single session will still be packed to the brim. Her image and every single statement she makes 
-                    is closely monitored by her agency.
-                </p>
-                <p id="char2_word">
-                    A popular streamer who has a group of diehard fans. She enjoys streaming herself playing video 
-                    games and chatting with her fans about all kinds of gossip. She represents chaos and disorder 
-                    in the internet world, yet at the same time represents creativity and possibility.
-                </p>
-                <p id="char3_word">
-                    The brilliant former guitarist has been a world-famous superstar for a long time.
-                    He is also the leader and primary guitarist of the personal band "Xenon",
-                    whose motivation is simply to "make everyone happy". 
-                </p>
-            </div>
-
-            <table class="table table-dark table-striped table-hover" style="color: aliceblue">
-                <thead>
-                <tr>
-                    <th>Ticket Type</th>
-                    <th>Price ($: CAD)</th>
-                    <th>Description</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td>General</td>
-                    <td>$ 50</td>
-                    <td>N/A</td>
-                </tr>
-                <tr>
-                    <td>Advanced</td>
-                    <td>$ 80</td>
-                    <td>
-                        Early access to the venue, generally 60-90 minutes ahead of general admission.<br>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Deluxe</td>
-                    <td>$ 100</td>
-                    <td>Early access to the venue, generally 60-90 minutes ahead of general admission.<br>
-                        A VIP goodie bag containing items generally not available for sale to the public.
-                    </td>
-                </tr>
-                </tbody>
-            </table>
-        </div>
-        <button type="button" class="btn btn-primary" id="bookBtn3" data-bs-toggle="modal" data-bs-target="#book_modal">BOOK NOW!</button>
-    </section>
-    <div class="modal fade" id="book_modal">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-            <!-- head-->
-            <div class="modal-header">
-                <h4 class="modal-title">Booking</h4>
-                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-            </div>
-            <!-- body-->
-            <div class="modal-body">
-                <div class="container mt-3">
-                    <form action="" class="was-validated">
-                        <div class="mb-3">
-                            <label for="time_select" class="form-label">Choose time:</label>
-                            <select class="form-select" id="time_select">
-                                <option>August 12, 2022, 3:00 P.M. ~ 6:00 P.M.</option>
-                                <option>August 13, 2022, 3:00 P.M. ~ 6:00 P.M.</option>
-                            </select>
-                        </div>
-                        <div class="mb-3">
-                            <label for="ticket_select" class="form-label">Choose Ticket Type:</label>
-                            <select class="form-select" id="ticket_select">
-                                <option>General ($50)</option>
-                                <option>Advanced ($80)</option>
-                                <option>Deluxe ($100)</option>
-                            </select>
-                        </div>
-                        <div class="mb-3">
-                            <label for="name" class="form-label">Name:</label>
-                            <input type="name" class="form-control" id="name" placeholder="Enter Full Name" name="Name" required>
-                            <div class="invalid-feedback">Please Enter a Name</div>
-                        </div>
-                        <div class="mb-3">
-                            <label for="phone" class="form-label">Phone Number:</label>
-                            <input type="phone" class="form-control" id="phone" placeholder="Enter Phone Number" name="Phone" required>
-                            <div class="invalid-feedback">Please Enter a phone number</div>
-                        </div>
-                        
-                    </form>
-                </div>
-            </div>
-            <!-- bottom -->
-            <div class="modal-footer justify-content-center">
-                <button type="button" class="btn btn-danger" data-bs-dismiss="modal" id="cancel_btn">Cancel</button>
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#confirm_modal"id="submit_btn">
-                    Submit
-                </button>
-            </div>
-            </div>
-        </div>
+<body>
+<div class="container p-5">
+    <div id="event_name">
+        <h1>Virtual Band Expo</h1>
     </div>
-    <div class="modal fade" id="confirm_modal">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header justify-content-center">
-                    <h3>Confirm Booking?</h3>
-                </div>
-                <div class="modal-footer justify-content-center">
-                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#book_modal" id="return_btn">Cancel Booking</button>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#success_modal" id="confirm_btn">Confirm Booking</button>
-                </div>
-            </div>
-        </div>
+    <div class="progress" id="loading_bar">
+        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:50%">Coming Soon</div>
     </div>
-    <div class="modal fade" id="success_modal">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-body">
-                <div class="alert alert-success alert-dismissible fade show" id="success_msg">
-                    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-                    <strong>Successful!</strong> Your booking request has been completed.
-                </div>
-            </div>
-        </div>
-    </div>
-
-</main>
-<footer id="footer">
-    <div class="border-top border-3 border-aliceblue container" id="footer-container">
-        <div class="container" id="footer-row-middle">
-            <div class="container footer-row-middle" id="footer-row-middle-left" style="color: aliceblue">
-                <h2 class="footer-row-middle-h2">Contact Info</h2>
-                <h5 class="footer-row-middle-h5">(+1) 123-456-7890</h5>
-                <h5 class="footer-row-middle-h5">233 Main Rd., Ottawa, ON, Canada</h5>
-            </div>
-            <div class="container footer-row-middle" id="footer-row-middle-right" style="color: aliceblue">
-                <h2 class="footer-row-middle-h2">Business Hours</h2>
-                <h5 class="footer-row-middle-h5" id="footer-row-business-hours-h5-1">Monday to Friday, 9:30 AM to 5:30 PM</h5>
-                <h5 class="footer-row-middle-h5" id="footer-row-business-hours-h5-1">Saturday to Sunday, 9:30 AM to 3:00 PM</h5>
-            </div>
-        </div>
-    </div>
-    <div class="container" id="footer-row-bottom">
-        <div class="container" id="footer-row-bottom-right" style="color: aliceblue">
-            <span>&copy; Saya Song Media, All Rights Reserved</span>
-        </div>
-    </div>
-</footer>
+    <meta charset="utf-8" http-equiv="refresh" content="3;url=../test_site/main.html">
+</div>
 </body>
+
+
 </html>
